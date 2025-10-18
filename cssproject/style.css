@@ -1,0 +1,15 @@
+.stylepink{
+    background-color:pink;
+}
+.article{
+    color: blue;
+}
+ #div1{
+    color: chocolate;
+} 
+ div > p{
+    color: gray;
+ }
+ div + p{
+    color: blueviolet;
+ }
