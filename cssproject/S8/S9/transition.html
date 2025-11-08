@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>transition</title>
+    <style>
+        #div1{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            transition: all 15s ease-in-out 1s;
+        }
+        /* ease :est une fonction de transition que commence lentement ,accelere au milieu et fini vite 
+        ease-in: le mouvement commence lentement puis accelerevite jusqu'a le fin
+        ease-out:le mouvement commence vite puis ralentit vers la fin
+        ease-in-out:combine les deux procedets lent au debut rapide au milieu ,lent a la fin
+        linear:la transition se fait a vitesse constante du debut a la fin */ 
+        #div1:hover{
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1"></div>
+</body>
+</html>

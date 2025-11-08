@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>exercice3</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <style>
+       
+        .div1{
+           
+             border: 1px solid blue;
+            display: grid;
+            grid-template-columns:repeat(4,1fr);
+            gap: 10px;
+           
+        }
+        .image{
+          
+            width: 200px;
+            height: 200px;
+        }
+         @media (max-width:600px){
+            .div1{
+                
+            border: 1px solid blue;
+            display: grid;
+             grid-template-columns: repeat(1,1fr);
+            gap: 10px;
+            }
+            }
+        @media (min-width:601px) and (max-width:992px){
+            .div1{
+          grid-template-columns:repeat(2,1fr)  ;}
+        }
+    </style> 
+    </head>
+    <body>
+       <div class="div1">
+        <img src="image1.jpg" class="image">
+         <img src="image2.jpg" class="image">
+          <img src="image3.jpg" class="image">
+           <img src="image4.jpg" class="image">
+            
+             
+       </div>
+    </body>
+</html>

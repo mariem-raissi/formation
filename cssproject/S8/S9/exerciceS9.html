@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            exercice seance 9
+        </title>
+        <style>
+            @keyframes transform{
+                form{
+                    opacity: 0;
+                }
+                to{
+                    opacity: -3;
+                }
+            }
+            @keyframes mouvement{
+                form{
+                    transform:scale(1);
+                    color: blue;
+                    
+                }
+                to{
+                    transform: scale(3);
+                    color: blue;
+                    
+                }
+            }
+          .div1{
+            width: 300px;
+            height: 200px;
+            background-color: antiquewhite;
+          text-align: center; 
+          margin: 0 auto;
+           
+          } 
+          h1{
+            color: blueviolet;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            animation: transform 2s linear 1s infinite;
+          }
+          .text{
+            color: rgba(255, 0, 255, 0.438);
+            animation: mouvement 3s ease 1s infinite alternate;
+          }
+        </style>
+    </head>
+    <body><div class="div1">
+        <h1>carte d'invitation</h1>
+        <p class="text">votre texte ici 1 </p>
+        <p class="text">votre texte ici 2 </p>
+        <p class="text">votre texte ici 3 </p>
+        </div>
+    </body>
+</html>

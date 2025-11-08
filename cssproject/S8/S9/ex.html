@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            @keyframes text1{
+                form{
+                    opacity: -3;
+                }
+                to{
+                    opacity: 0;
+                }
+            }
+            @keyframes hover{
+                from{
+                    transform: scale(1);
+
+                }
+                to{
+                    transform: scale(2);
+                }
+            }
+            @keyframes carre{
+                from{
+                    translate: 0 0;
+                   
+                     }
+                to{
+                    translate: 450px 0;
+                }
+            }
+
+         #button {
+            font-size: 20px;
+            margin:100px 100px;
+            background-color: red;
+            transition: all 2s ease-in 1s 3;
+                 }  
+         #button:hover{
+            background-color: blue;
+                      }
+         img{
+            
+            width: 100px;
+           margin-left: 65px;
+            height: 100px;
+            animation: hover 3s ease-in-out 1s 3 alternate;
+            }
+         #p1{
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+            color: blueviolet;
+            animation: text1 2s linear 1s 2;
+
+         }
+         .div1{
+          width: 500px;
+            background-color: beige;
+            border: 1px solid blue;
+            height: 400px;
+         }
+        .div2{
+          
+            background-color: blueviolet;
+            width: 30px;
+            height: 30px;
+            border-radius: 5px;
+            animation: carre 2s ease 0.5s infinite alternate ;
+
+        }
+
+        </style>
+    </head>
+    <body><div class="div1">
+        <p id="p1">bonjour tout le monde</p>
+        <br>
+         <img src="img.jpg">
+        <button id="button">envoyer</button>
+      <div class="div2"></div>
+        
+
+        </div>
+     
+                
+    </body>
+</html>

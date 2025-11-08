@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head> <title></title>
+    <style>
+       /*  @media (orientation: landscape)and (max-width:768px){
+            body{
+                background-color: red;
+            }
+        } */
+         @media print{
+            .container{ 
+                background-color: green;
+            }
+            .box{
+                background-color: red;
+            }
+         }
+        .container{
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .box{
+            background-color: green;
+            color: #ffff;
+            padding: 20px;
+            width: 30px;
+            border: 10px solid black;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+</div>
+</body>
+</html>>

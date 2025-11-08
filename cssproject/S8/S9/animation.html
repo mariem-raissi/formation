@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>animation</title>
+        <style>
+           /*  @keyframes noAnimation{
+                0% {color: red;
+                background-color:black;
+            font-family: "arial" ;}
+                
+                25% {background-color: yellow;}
+                40% {background-color: blue;}
+                75% {background-color: green;}
+                100% {background-color: red;}
+            } */
+             @keyframes movement{
+                0% {
+                    left: 3px;
+                    color: blue;
+                }
+                100%{right: 10px;
+                    color: red;
+
+                }
+               
+
+             }
+             @keyframes movesmouth{
+                0%, 25%{
+                    transform: scale(1);
+                    color: blue;}
+                    100%{
+                         transform: scale(1);
+                    color:red;}
+                                      
+                }
+                @keyframes glowtext{
+                    0%{
+                        color: yellow;
+                        text-shadow: 0 0 20px red;
+                    }
+                    100%{
+                        color: blue;
+                        text-shadow: 0 0 20px black;
+                    }
+                }
+                /* from{
+                    opacity: 0;
+                    transform: translateX(30px);
+                    color: blue;
+                }
+                to{
+                    opacity: 1;
+                    transform: translateY(10px);
+                    color: red;
+                } */
+                /* 0%{
+                    transform: translateY(30px);
+                    color: blue;}
+                    100%{
+                        transform: translateY(10px);
+                        color: red;
+                    } */
+                
+             
+             h1{
+                /* position: relative; */
+                animation: movesmouth 4s ease-in-out 1s infinite alternate;
+             }
+            /* h1{
+                animation: noAnimation 4s ease-in-out infinite alternate;
+                infinite:la transition se fait en boucle 
+                alternate :la transition se fait en sens inverse
+                nombre 3:le nombre de fois que la transition se fat 
+            } */
+             @keyframes fodeIn{
+                form{
+                    opacity: 0;
+                }
+                to{
+                    opacity: 1;
+                }
+             }
+             .animation{
+                color: blue;
+                opacity: 0;
+                animation: fodeIn 2s ease-in-out 1s forwards;
+
+             }
+             .p1{
+                animation-delay: 0s;}
+              .p2{animation-delay: 1s;}
+              .p3{animation-delay: 2s;}
+        </style>
+    </head>
+    <body>
+        <h1>Hello world</h1>
+        <p  class="animation p1">p1</p>
+        <p  class="animation p2">p2</p>
+        <p  class="animation p3">p3</p>
+    </body>
+</html>
