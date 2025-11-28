@@ -1,0 +1,91 @@
+.image {
+    background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.grizette.com%2Fwp-content%2Fuploads%2F2022%2F08%2FBoulangerie-Montpellier%25C2%25A9beats-AdobeStock.jpeg&f=1&nofb=1&ipt=8bcb1748553ea65ed0d619597194d9cb2daccf756a737362ae8af5c4b5737446');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    opacity: 0.5;}
+.entete{
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    top: 30px;
+    left: 32%;
+}
+.table{
+   
+    margin: 20px auto;
+    box-shadow: 0 0 15px rgba(0,0, 0, 0.1);
+    overflow: hidden;
+    border-radius: 10px;
+    border-collapse: collapse;
+}
+.photo{
+    margin: 10px 10px;
+    width:100px ;
+    height: 100px;
+    box-shadow: 3px 3px 3px 3px;}
+
+    .photo:hover{
+    transform: scale(1.3);
+    border-radius:8px 8px ;
+    }
+
+.menu-m{
+    margin-top: 150px;
+    width: 90%;
+    margin-left: 30px;
+     }
+.titre-m{
+    color: rgb(105, 63, 7);
+    white-space: nowrap;
+    text-align: center;
+    font-family:  monospace;
+    overflow: hidden;
+    animation: titre 4s steps(10,end) infinite ;
+     }
+button:hover{
+        
+        transform: scale(1.3);
+        border-radius:8px 8px ;
+
+            }
+#div1{
+        margin-top: 150px;
+        margin-left: 30%;
+     }
+     .logo{
+        animation: zoom 2s ease-in-out 1s infinite alternate ;
+
+     }
+     .foot{
+        background-color: aliceblue;
+        color: black;
+     }
+@keyframes titre{
+    from{width: 0;}
+    to{width: 100%;}
+}
+
+@keyframes zoom{
+                from{
+                    transform: scale(1);
+                    border-radius: 6px 6px ;
+                }
+                to{
+                    transform: scale(1.2);
+                     border-radius: 6px 6px ;
+                }
+            }
+ @media (max-width:600px){
+   section{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                
+                }
+                                
+ }           
+
