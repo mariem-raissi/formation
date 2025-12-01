@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            //declaration classique
+            function f1(){
+                console.log("f1");
+            }
+            f1();
+            //returne en valure
+            function f2(){
+                return 4;
+            }
+            let x = f2()+6;
+            console.log("x=",x);
+            console.log(f2());
+            //finction avec portee globale
+            let y=4;
+            function f4(){
+                console.log("y=",y)
+            }
+            f4();
+            //function avec portee local
+            function f5(){
+                let z=8;
+                console.log("Z=",z);
+            }
+            let z=400;
+            console.log("z=",z);
+            f5();
+            console.log("z=",z);
+            //closure
+            function ma(){
+                let nom="test";
+                function mb(){
+                    console.log(nom);
+                }
+                return mb;
+            }
+            const constant=ma();
+            constant();
+             // closure avec crementation
+             function compteur(){
+                let count=0;
+                return function()
+                 {count++;
+                     console.log(count);
+                }      
+       } 
+const c=compteur();
+c();
+c();
+// compteur()();
+//tableau array
+let tab=[1,2,3,4,5];
+let doubles=tab.map(n=>n*2);
+console.log(doubles);
+//tableau objet 
+let personnes=[
+    {nom:"alice",age:25},
+    {nom:"bob",age:30}];
+
+let noms=personnes.map(n=>n.age);
+console.log(noms);
+
+
+
+
+        </script>
+    </body>
+</html>
