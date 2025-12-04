@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <h1 id="titr1">seance 3</h1>
+        <ul id="fruilist">
+            <li class="item">pomme</li>
+            <li class="item">banane</li>
+            <li class="item">orange</li>
+        </ul>
+        <button id="btn">ok</button>
+        <script>
+            //dom change couleur
+            document.getElementById("titr1").style.color="red";
+            // ajouter item dans la liste
+            document.getElementById("fruilist").innerHTML="<li class='item'>kiwi</li>";
+            let btn=document.getElementsByid("btn");
+            btn.addeventlisyener("click",function(){alert("hi");})
+            //queryselect
+            document.querySelector("h1").textContent="bonjour";
+            let items=document.querySelector("ul");
+            items.style.color="blue";
+            items.style.fontSize="20px";
+            items.innerHTML+="<p>fruit</>";
+                document.querySelector("buttom").remove();
+                //create element 
+                let nemp=document.createElement("p");
+                newp.textContent="nouveau paaj";
+                newp.style.color="green";
+                newp.style.fontSize="25px";
+                document.body.appendChild(newp);
+            </script>
+    </body></html>

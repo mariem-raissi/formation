@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head><title>ex js</title></head>
+    <body>
+        <div id="div1">
+            <p id="pr1">paragraph 1</p>
+            <p id="pr2">paragraph 2</p>
+            <p id="pr3">paragraph 3</p>
+        </div>
+        <script>
+            
+           document.getElementById("pr1").style.color="blue";
+           document.getElementById("pr1").style.fontSize="25px";
+
+           document.getElementById("pr2").style.color="pink";
+           document.getElementById("pr2").style.fontSize="25px";
+           document.getElementById("pr3").style.color="green";
+           document.getElementById("pr3").style.fontSize="25px";
+           let pr=document.querySelector("div").innerHTML+="<p>paragraph 4</>";
+            pr.style.color="rouge";
+            pr.style.fontSize="25px";
+           
+        </script>
+    </body></html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>dom js</title>
+    </head>
+    <body>
+        <label for="email" >email</label> 
+        <input type="text" id="email" name="email">
+        <button onclick="validerEmail()">Valider</button>
+        <script>
+            
+            function validerEmail() {
+            let email = document.getElementById("email").value;
+
+              const car = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+             if (car.test(email)) {
+              alert("Email valide !");
+                 } else {
+              alert("Email invalide !");
+             }
+            }
+</script>
+        </script>
+    </body>
+    </html>

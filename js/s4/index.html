@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>dom js</title>
+    </head>
+    <body>
+        <p> hi dom</p>
+        <p>thats it</p>
+        <img id="im1" src="../images/il.jpg" alt="camera">
+
+        <script>
+         let   para=document.getElementsByTagName("p");//recherche <balise>
+         para[1].innerHTML="hi this is a new update";
+        // element attribute
+        let camera=document.getElementById("im1");//recherche par id
+        camera.src="../images/im.jpg";
+        //data write
+        document.write("<h1>hi takwa </h1>");
+        document.write(Date());
+        document.write("<br>");
+        document.write("thats "+"4+7"+"aquals"+(4+7));
+        document.write("thats 4+7 aquals"+(4+7));
+        </script>
+    </body>
+</html>

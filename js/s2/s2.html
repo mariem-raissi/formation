@@ -4,6 +4,7 @@
 
     </head>
     <body>
+
         <script>
             //declaration classique
             function f1(){
@@ -65,10 +66,56 @@ let personnes=[
 
 let noms=personnes.map(n=>n.age);
 console.log(noms);
+// ajouter ,suppprimer , modifier element 
+let ages=[8,9,10,11,12,13];
+console.log("ages:",ages);
+ages.push(15);// ajout a la fin du tableau
+console.log("new ages:",ages)
+ages.unshift(7); //ajout au debut
+console.log("new ages:",ages);
+ages.splice(1,2,20);
+console.log("new ags after splice:",ages);
+ages.pop();// supprimer le derniere elmment
+console.log("new ages after pop :",ages);
+ages.shift();
+console.log("new ages after shift :",ages);/*
+ages.splice(0,4);//supprimer a partir d'un index
+console.log("new ages aftersplice :",ages);*/
+let number=ages.filter(a => a>18)
+console.log("numbers >18 :",numbers);
+// modifier
+ages[3]=33;
+console.log("ages after modification :",ages);
+ages.splice(1,1,50);
+console.log(" ages after splice modification :",ages);
+let index=ages.indexof(33);
+ages[index]=35;
+console.log("ages after index modification ::",ages);
+//find
+let found=ages.find(a=> a>30);
+console.log("first age >30:",found);
+//reduce
+let sum=ages.reduce((x,y)=>x+y);
+console.log("sum of ages:",sum);
 
+let student={nom:"mariem", age:22, parler(){console.log("bonjour",this.nom);
+
+}
+   
+}
+student.parler();
+//ajouter un attribut d'un objet
+student.adresse="tunis";
+ console.log("student",student);
+ //modificatiin
+ student.age=23;
+ console.log("student after age modification ",student);
+ delete student.age;
+ console.log("student after age deletion ",student);
 
 
 
         </script>
+        
     </body>
 </html>
