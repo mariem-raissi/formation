@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>evenement form</title>
+        <style>
+            p{
+                font-size: 200px;
+            }
+        </style>
+    </head>
+    <body>
+        <form id="myform">
+            <input type="text" id="username" placeholder="entrer username">
+            <input type="text" id="email" placeholder="entrer email">
+           <input type="text" id="password" >
+            <button type="submit">submit</button>
+        </form>
+    </body>
+    <script>
+        const from=document.getElementById("myform");
+        //submit
+        from.addEventListener("submit",(event)=>{
+            event.preventDefault();
+            const user=document.getElementById("username").value;
+            if(user==''){alert("user name cannot be empty");}
+            else{alert("hi"+" "+user);}
+        })
+        //change event
+        const email=document.getElementById("email");
+        email.addEventListener("change",()=>{
+            alert("email change to :"+email.value)
+        })
+        //focus event
+        const password=document.getElementById("password");
+        password.addEventListener("focus",()=>{password.style.backgroundColor="red";})
+        //blur event
+         
+        password.addEventListener("blur",()=>{password.style.backgroundColor="white";})
+        //windows events-----------
+        //load
+       /* window.addEventListener("load",()=>{
+            alert("page loaded");
+            console.log("page loaded");
+        })
+    //resize
+    window.addEventListener("resize",()=>{
+        alert("window resized");
+    })*/
+    //scroll
+    window.addEventListener("scroll",()=>{
+        //change body baground color
+        document.body.style.backgroundColor="red";
+    })
+    </script>
+    </html>

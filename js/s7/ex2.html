@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>evenement form</title>
+        
+    </head>
+    <body>
+        <form id="form">
+            <input type="text" id="prenom" placeholder="donner mois votre prenom">
+            <button  onclick="bonjour(event)">envoyer</button>
+        </form>
+        <div id="div1"></div>
+    </body>
+    <script>
+        function bonjour(event) {
+            const nom = document.getElementById("prenom").value;
+            event.preventDefault();
+
+            const p = document.createElement("p");
+            const text = document.createTextNode("bonjour "+" " + nom);
+
+            p.appendChild(text);
+
+            const div = document.getElementById("div1");
+            div.appendChild(p);
+        }
+    </script>
+       
+            </html>
