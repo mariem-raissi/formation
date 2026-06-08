@@ -31,3 +31,22 @@ try:
 
 except ZeroDivisionError:
     print("Impossible de diviser par zéro") 
+###############
+class Etudiant:
+    def __init__(self,nom,prenom,note):
+        self.nom=nom 
+        self.prenom=prenom 
+        self.note=note
+    def afficher(self):
+        print("nom:",self.nom)   
+        print("prenom:",self.prenom)
+        print("note:",self.note) 
+    def est_admis(self):
+        if self.note>= 10 :
+            return True
+        else:
+            return False    
+e1=Etudiant("sara","benfoulen",9)  
+e1.afficher()  
+print(e1.est_admis() )       
+    
