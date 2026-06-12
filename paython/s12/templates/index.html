@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Liste de tâches</title>
+</head>
+<body>
+    <h1>Mes tâches</h1>
+    <ul>
+        {% for list  in liste  %}
+            <li>{{ list }}</li>
+        {% endfor %}
+    </ul>
+    <form action="/form" method="post" >
+         
+        <input type="text" name="tache" placeholder="nouvelle tache">
+        <button type="submit" >ajouter</button>
+    </form>
+</body>
+</html> 
