@@ -1,0 +1,14 @@
+ 
+@if(favori.length > 0){
+ <div>
+      <h3>Mes favoris ❤️</h3>
+      <ul>
+        @for(f of favori; track f.id){
+        <li>
+          {{ f.destination }} - {{ f.pays }}
+           
+        </li>
+        }
+      </ul>
+    </div>
+   }

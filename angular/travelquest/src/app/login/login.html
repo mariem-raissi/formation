@@ -1,0 +1,15 @@
+ <div class="container mt-4 w-50 shadow">
+    <h1 class="text-center text-secondary">Login</h1>
+<form #loginForm="ngForm" (ngSubmit)="onlogin()">
+    <label for="email">Email:</label>
+    <input type="email" class="form-control" id="email" name="email" [(ngModel)]="credentials.email" required>
+    <label for="password">Password:</label>
+    <input type="password" id="password" class="form-control" name="password" [(ngModel)]="credentials.password" required>
+    <div class="text-center">
+    <input type="submit" class=" m-2 btn btn-primary" value="Login">
+</div>
+</form></div>
+
+ 
+
+ 

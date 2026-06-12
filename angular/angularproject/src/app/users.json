@@ -1,0 +1,38 @@
+{
+    "users":[{
+        "id":"1",
+        "name":"ali",
+        "email":"ali@exemple.coml"
+},
+{
+   "id":"2",
+        "name":"sara",
+        "email":"sara@xmple.com" 
+},
+{
+    "id":"3",
+        "name":"mohammed",
+        "email":"mohammed@gmail.com"
+},
+{
+    "id":"4",
+        "name":"aymen",
+        "email":"aymen@gmail.com"
+},
+{
+    "id":"5",
+        "name":"jamel",
+        "email":"jamel@exmple.com"
+},
+{
+    "id":"6",
+        "name":"marwa",
+        "email":"marwa@gmail.com"
+},
+{
+    "id":"7",
+        "name":"ranim",
+        "email":"ranim@gmail.com"
+}
+    ]
+}

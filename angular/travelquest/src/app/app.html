@@ -1,0 +1,31 @@
+  <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="assets/travel.jpg" class=" rounded-circle" style="width: 130px; height: 90px;"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav w-100 d-flex">
+        <li class="nav-item">
+          <a class="nav-link   fw-bold" aria-current="page" routerLink="/home" >Home</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link fw-bold" routerLink="/list">liste de voyage</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-bold" routerLink="/reserve">reservation</a>
+        </li>
+        <li class="nav-item ms-auto">
+          <a class="nav-link fw-bold " routerLink="/sign"> sign up</a>
+        
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-bold" routerLink="/login"  routerLinkActive="active">login</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<router-outlet />

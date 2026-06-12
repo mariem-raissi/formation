@@ -1,0 +1,18 @@
+<p>listes des produits </p>
+<div class="container">
+    <div class="row  ">
+@for ( carte of produits; track carte ){
+    
+ <div class="card m-2" style="width: 300px;">
+    <div class="card-body">
+        <img [src]="carte.img" alt="image1" width="200" height="200" class="card-img-top  "> 
+        <p>{{carte.name}} </p>
+        <a routerLink="detail/id" class="btn btn-info">detail </a>
+    </div>
+ </div>
+ 
+ }
+ 
+ </div>
+ </div>
+ 

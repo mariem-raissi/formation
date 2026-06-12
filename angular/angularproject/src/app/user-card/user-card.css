@@ -1,0 +1,25 @@
+.user-card{
+    width: 300px;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*user active*/
+.active-card{
+    background-color: green;
+    color: white;
+}
+.inactive-card{
+    background-color: red;
+    color: white;
+}
+.disables{
+    background-color: yellow;
+    color: black;
+}
+.box{
+    width:100px ;
+    height:100px ;
+    background-color: rgb(55, 0, 128);
+}

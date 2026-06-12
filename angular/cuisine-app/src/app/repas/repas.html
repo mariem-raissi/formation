@@ -1,0 +1,28 @@
+<p>repas works!</p>
+<h2>Planification des repas</h2>
+
+<p>{{ message }}</p>
+
+<div>
+  <input #recette placeholder="Nom recette">
+
+  <select #jour>
+    @for (j of jours; track j) {
+      <option [value]="j">{{ j }}</option>
+    }
+  </select>
+
+  <button (click)="ajouter(jour.value, recette.value)">
+    Ajouter
+  </button>
+</div>
+
+<hr>
+
+<h3>Planning</h3>
+
+@for (p of plans; track p.id) {
+  <div>
+    <b>{{ p.jour }}</b> → {{ p.recette }}
+  </div>
+}

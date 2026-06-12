@@ -1,0 +1,15 @@
+ 
+<form [formGroup]="forms" (ngSubmit)="envoyer()">
+    <input type="text" formControlName="name" placeholder="nom">
+    <input type="text" formControlName="name2" placeholder="nom2">
+    <div formGroupName="adress">
+        <input type="text" formControlName="city" >
+        <input type="text" formControlName="postal_code" >
+    </div>
+    <button type="submit" [disabled]="!forms.valid"> inscrit</button>
+    <button type="button" (click)="patch()">ptch value</button>
+    <button type="button" (click)="reset()">reset value</button>
+</form>
+@if(!forms.valid){
+    <p style="color:red">form is valid</p>
+}

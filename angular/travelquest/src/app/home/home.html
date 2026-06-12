@@ -1,0 +1,24 @@
+ <div class="container mt-4">
+<input type="text"  placeholder="rechercher par pays">
+
+<div class="container">
+
+<div class="row p-2 g-3">
+ @for(p of voyage;track p.id){
+<div class="col-3 ">
+    <div class="card">
+        <img class="card-img-top" [src]="p.image" style="height: 200px;" alt="Card image cap">
+ 
+      <div class="card-body">
+        <h5 class="card-title">{{p.destination}}</h5>
+         
+         <button class="btn btn-primary" [routerLink]="['/carte',p.id]">
+            Voir les détails
+        </button>
+      </div>
+    </div>
+  </div>
+ }
+</div>
+</div>
+</div>

@@ -1,0 +1,14 @@
+<p>exr3 works!</p>
+
+<form [formGroup]="productForm" (ngSubmit)="submit()">
+    <input type="text" formControlName="name"  >
+    <input type="text"  formControlName="price"  >
+    
+    <select formControlName="categorie">
+        <option value="electronique">electronique</option>
+        <option value="mode">mode</option>
+        <option value="maison">maison</option>
+    </select>
+    
+     <button type="submit" [disabled]="productForm.invalid">enregistrer </button>
+</form>

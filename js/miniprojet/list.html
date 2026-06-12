@@ -36,8 +36,25 @@
 
     </body>
     <script>
-        let input = document.getElementById("taskInput");
-        let list = document.getElementById("taskList");
+        const input = document.getElementById("taskInput");
+        const button = document.querySelector("button");
+        const list = document.getElementById("taskList");
+
+        button.addEventListener("click", () => {
+         if (input.value === "") return;
+
+        const li = document.createElement("li");
+        li.className = "list-group-item";
+        li.textContent = input.value;
         
+        li.addEventListener("click", () => {
+        li.remove();
+    });
+  
+    list.appendChild(li);
+    input.value = "";
+
+    });               
+  
     </script>
 </html>

@@ -1,0 +1,16 @@
+  @if(cart){
+
+ <div class="container mt-4 shadow">
+   <img [src]="cart.image" style="width: 500px; height: 300px;">
+   <h3>{{cart.destination}} </h3>
+   <h4>{{cart.pays}} </h4>
+    <p>{{cart.prix}} </p> 
+     
+    <button type="submit" class="btn btn-primary m-2" (click)="favoris(cart)" >
+       {{ favorise.includes(cart) ? '💔 Retirer des favoris' : '❤️ Ajouter aux favoris' }}</button>
+    <button type="submit" class="btn btn-primary" routerLink="/reserve">reserver</button>
+     
+ </div>}
+ <app-favoris [favori]="favorise" (remove)="favoris($event)"></app-favoris>
+  
+ 

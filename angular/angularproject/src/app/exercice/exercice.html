@@ -1,0 +1,14 @@
+<p>count: {{count()}} </p>
+@if(count() < 0){
+    <p style="color: red;"> valeur negative</p>
+}
+ 
+@if(  num() ){
+    
+ <p>   pair </p>
+} @else {
+    <p>  impair </p>
+}
+
+<button (click)="increment()">+</button>
+<button (click)="decrement()">-</button>

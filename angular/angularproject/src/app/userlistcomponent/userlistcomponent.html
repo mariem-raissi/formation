@@ -1,0 +1,18 @@
+<p>userlistcomponent works!</p>
+
+    <table border="1">
+        
+        <tr>
+            <th>id</th>
+            <th>name</th>
+            <th>email</th>
+        </tr>
+        @for(item of list; track item.id ){
+        <tr>
+        <td>{{item.id}} </td>
+        <td>{{item.name}} </td>
+        <td>{{item.email}} </td></tr>
+    <button (click)="supprimeruser(item.id)">supprimer</button>
+    }
+    </table>
+    

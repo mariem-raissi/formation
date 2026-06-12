@@ -1,0 +1,21 @@
+<h1>login</h1>
+<form #contactForm="ngForm" (ngSubmit)="onsubmit(contactForm)">
+    <label for="name">name:</label>
+    <input type="text" name="name"  [(ngModel)]="forms.name" #name="ngModel"  required>
+    @if (name.errors?.['required']){
+        <p style="color: red">the name is required</p>
+    }
+    <br>
+    <label for="email">email:</label>
+    <input type="email" name="email"  [(ngModel)]="forms.email" #email="ngModel" placeholder="Email" required>
+    @if (email.errors?.['required']){
+        <p style="color: red">the name is required</p>
+    }
+    <br>
+    <label for="password">password:</label>
+    <input type="password"  placeholder="Mot de passe"[(ngModel)]="forms.password" #password="ngModel" required>
+    @if (password.errors?.['required']){
+        <p style="color: red">the password is required</p>
+    }
+    <button type="submit" [disabled]="!contactForm.valid">Se connecter</button>
+</form>

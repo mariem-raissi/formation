@@ -1,0 +1,21 @@
+ 
+<div class="container mt-4 shadow ">
+  <h2 class="text-center">Réserver un voyage</h2>
+
+  <form (ngSubmit)="reserver()">
+
+    <label>Nom :</label>
+    <input type="text" class="form-control" [(ngModel)]="reservation.nom" name="nom" required>
+
+    <label>Prénom :</label>
+    <input type="text" class="form-control" [(ngModel)]="reservation.prenom" name="prenom" required>
+    <label>Date :</label>
+    <input type="date"  class="form-control" [(ngModel)]="reservation.date" name="date" required>
+
+    <label>Nombre de places :</label>
+    <input type="number" class="form-control" [(ngModel)]="reservation.nbPlaces" name="nbPlaces" min="1">
+
+    <button class="btn btn-primary m-2" type="submit">Réserver</button>
+<button (click)="logout()">Logout</button>
+  </form>
+</div>

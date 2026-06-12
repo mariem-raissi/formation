@@ -1,0 +1,41 @@
+ 
+<div class="container mt-4 shadow text-center">
+ <h2>Gestion des Voyages</h2>
+
+<form (ngSubmit)="saveVoyage()">
+   
+ <div>     
+<input type="text"  class="form-control" [(ngModel)]="voyage.id" name="id" placeholder="id" required  >
+</div>
+<div>
+    <label for="destination" class="form-label">destination</label>
+<input type="text"  class="form-control" [(ngModel)]="voyage.destination" name="destination" placeholder="destination"  required  >
+</div>
+<div>
+    <label for="pays" class="form-label">pays</label>
+<input type="text" class="form-control" [(ngModel)]="voyage.pays" name="pays" placeholder="pays"  required >
+</div>
+<div>
+    <label for="prix" class="form-label">prix</label>
+<input type="number" class="form-control" [(ngModel)]="voyage.prix" name="prix" placeholder="prix" required  >
+</div>
+<div>
+    <label for="image" class="form-label">image</label>
+<input   type="file" id="image" name="image" class="form-control" accept="image/*" (change)="onFileSelected($event)" ngModel>
+</div>
+  <button class="btn btn-primary m-2" type="submit"> 
+    {{ editMode ? 'Modifier' : 'Ajouter' }}
+  </button>
+</form>
+</div>
+<hr>
+
+<ul>@for(v of voyages;track v){
+  <li>
+    {{ v.destination }} - {{ v.prix }} DT
+ </li>
+ <li>
+    <button (click)="editVoyage(v)" class="btn btn-success" >Modifier</button>
+    <button (click)="deleteVoyage(v.id)" class="btn btn-danger m-2">Supprimer</button>
+   </li>}
+</ul>
